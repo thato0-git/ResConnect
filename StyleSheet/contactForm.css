@@ -1,0 +1,158 @@
+/* POPUP STYLES - FIXED VERSION */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-overlay.active {
+    display: flex;
+}
+
+.popup-container {
+    position: relative;
+    background-color: rgb(249, 183, 205);
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.popup-content {
+    padding: 30px;
+    background-color: rgb(201, 242, 199);
+    border-radius: 8px;
+    margin: 20px;
+}
+
+.popup-content h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+/* Make form styles specific to popup only */
+.popup-content .form-group {
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.popup-content label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+    width: 100%;
+    text-align: center;
+}
+
+.popup-content .checkbox-group {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.popup-content .checkbox-group input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+}
+
+.popup-content .checkbox-group label {
+    width: auto;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.popup-content input[type="text"],
+.popup-content textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 400px;
+}
+
+.popup-content textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    resize: none;
+    height: 200px;
+    resize: vertical;
+    width: 100%;
+    max-width: 400px;
+}
+
+.popup-content .submit-btn {
+    background-color: rgb(76, 175, 80);
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    max-width: 400px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.popup-content .submit-btn:hover {
+    background-color: rgb(69, 160, 73);
+}
+
+.popup-content form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #555;
+    z-index: 10;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.close-btn:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Blur effect for main content when popup is active */
+body.popup-active main {
+    filter: blur(5px);
+    pointer-events: none;
+}
