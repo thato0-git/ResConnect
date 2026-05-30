@@ -179,7 +179,7 @@ export const accommodations = [
         "description": "Sharing Apartment, Single Apartment",
         "university": "TUT",
         "funding": ["Bursary ", "Self Funded"],
-        "imageUrl": "images/accomodations/Ekhaya junction.jpg"
+        "imageUrl": "images/accomodations/Ekhaya residence.webp"
     },
     {
         "id": 21,    
