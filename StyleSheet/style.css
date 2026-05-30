@@ -17,10 +17,11 @@ header{
     display : flex;
     align-items: center;
     justify-content: space-between;
-    padding : 20px 80px;
+    padding : 15px 20px;
     background-color: rgb(190, 242, 187);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06) ;
-    
+    position: relative;
+    z-index: 1001;
 }
 
 /* Hamburger styling */
@@ -49,6 +50,14 @@ nav{
 
 nav.show{
     display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgb(190, 242, 187);
+    z-index: 1000;
+    padding: 15px 0;
+    box-shadow: 0 8px 10px rgba(0,0,0,0.1);
 }
 
 nav ul{
@@ -61,11 +70,12 @@ nav ul{
     display : flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .nav li{
     list-style: none;
-    padding: 0 20px;
+    padding: 10px 20px;
     position: relative;
 }
 
@@ -73,7 +83,7 @@ nav ul{
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
-    font-weight: 500px;
+    font-weight: 500;
     color:  #222;
     transition: color 0.3s ease;
 }
@@ -83,6 +93,12 @@ nav ul{
 }
 
 /*Main content style*/
+.banner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
 .main {
     position: relative;
    /* overflow: hidden;*/
@@ -93,45 +109,44 @@ nav ul{
     height: auto;
     background-size: cover;
     display:block ;
-    padding: 10px;
 }
 
 header img{
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: auto;
     background-size: cover;
     display:block ;
 }
 
-
-
 .main-content{
-
- position: relative;         
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 2;                
   color: rgb(249, 183, 205);
-  width: 80%;
+  width: 90%;
   max-width: 800px;
   text-align: center;         
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 32px 16px;
+  padding: 20px;
 }
 
 .main-content h1{
-    font-size: 48px;
+    font-size: 28px;
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-family:'Times New Roman', Times, serif;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .main-content p{
     font-family: 'Poppins', sans-serif;
-    font-size: 24px;
-    margin-bottom: 30px;
+    font-size: 16px;
+    margin-bottom: 20px;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
@@ -148,7 +163,8 @@ header img{
     font-family: 'Times New Roman', Times, serif;
     border: none;
     border-radius: 4px;
-    min-width: 200px;
+    flex: 1;
+    min-width: 120px;
 }
 
 .search-bar button{
@@ -185,6 +201,15 @@ header img{
     padding: 40px;
 }
 
+/* DEFAULT GRID FOR CARDS */
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+}
+
 /* CARD STYLING */
 .accommodation section {
   margin-top: 1rem;
@@ -203,6 +228,22 @@ header img{
 }
 
 @media screen and (min-width : 1025px) {
+    header {
+        padding: 20px 80px;
+    }
+
+    header img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .main-content h1 {
+        font-size: 48px;
+    }
+
+    .main-content p {
+        font-size: 24px;
+    }
 
     footer{
         display: flex;
@@ -215,19 +256,24 @@ header img{
         flex-direction: column;
     }
 
-    #cards {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
-        gap: 32px;
-        justify-content: center;
-    }
-
     .hamburger{
         display: none;
     }
 
     nav{
         display: block;
+        position: static;
+        background: none;
+        box-shadow: none;
+        padding: 0;
+    }
+
+    .nav {
+        flex-direction: row;
+    }
+
+    .nav li {
+        padding: 0 20px;
     }
 
     nav div ul{
@@ -263,7 +309,8 @@ header img{
     background: #fff;
     border-radius: 20px;
     box-shadow: 0 4px 16px rgba(0,0,0,0.1);
-    max-width: 420px;
+    width: 100%;
+    max-width: 380px;
     display: flex;
     flex-direction: column;
     align-items: center;  
@@ -318,7 +365,7 @@ footer{
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 40px;
-    padding: 40px 80px;
+    padding: 30px 20px;
 }
 
 .footer .content{
@@ -369,6 +416,92 @@ footer .content h3{
  opacity: 0.7;
 }
 
+/* ABOUT PAGE TEAM SECTION */
+.team {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid rgb(243, 201, 215);
+}
+
+/* CONTACT PAGE CONTAINER */
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.contact-info, .email-info {
+    flex: 1;
+    min-width: 280px;
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.email-info a {
+    display: block;
+    color: #1c7c54;
+    margin-top: 5px;
+    word-break: break-all;
+}
+
+/* TABLE RESPONSIVENESS */
+.table {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow-x: auto;
+}
+
+.table h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1c7c54;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+thead {
+    background-color: rgb(190, 242, 187);
+}
+
+/* VISION SECTION (ABOUT PAGE) */
+#vision {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
 .copyright{
     background-color: #222;
     padding: 15px 20px;
@@ -384,6 +517,66 @@ footer .content h3{
     line-height: 1.4;
 }
 
+/* Generic Banner for other pages */
+.page-banner {
+    background-color: rgb(190, 242, 187);
+    padding: 60px 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.team-member h4 {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #222;
+    font-family: 'Poppins', sans-serif;
+}
 
+/* Table specific tweaks */
+caption {
+    caption-side: bottom;
+    padding: 10px;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+tbody > tr:nth-of-type(even) {
+    background-color: #f2fcf0;
+}
+
+.page-banner h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #1c7c54;
+}
+
+.page-banner p {
+    max-width: 800px;
+}
+
+@media screen and (max-width: 768px) {
+    .page-banner {
+        padding: 40px 15px;
+    }
+    .page-banner h2 {
+        font-size: 2rem;
+    }
+    .search-bar {
+        flex-direction: column;
+        width: 100%;
+    }
+    .search-bar input, 
+    .search-bar button {
+        width: 100%;
+    }
+}
