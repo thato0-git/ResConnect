@@ -25,7 +25,7 @@ export const accommodations = [
         "location": "112 Hans Strijdom St, Vanderbijlpark, 1900",
         "university": "VUT",
         "funding": "NSFAS",
-        "imageUrl": "https://amorispan.co.za/wp-content/uploads/2022/08/LV-2-Copy-edited.jpg"
+        "imageUrl": "images/accomodations/taung.jpg"
     },
     {
         "id": 4,
@@ -34,7 +34,7 @@ export const accommodations = [
         "location": "Bedworthpark, Vereeniging",
         "university": "VUT",
         "funding": ["NSFAS ", "Self Funded"],
-        "imageUrl": "https://amorispan.co.za/wp-content/uploads/2022/08/AV-8-edited-768x432.jpg"
+        "imageUrl": "images/accomodations/Amberfield.jpg"
     },
     {
         "id": 5,    
@@ -43,7 +43,7 @@ export const accommodations = [
         "university": "VUT",
         "location": "112 Hans Strijdom St Vanderbijlpark 1911 ",
         "funding": "NSFAS ",
-        "imageUrl": "https://amorispan.co.za/wp-content/uploads/2022/08/Photo-Park-Village-3-2-edited-1536x865.jpg"
+        "imageUrl": "images/accomodations/Park Village.jpg"
     },
 
     {
@@ -53,7 +53,7 @@ export const accommodations = [
         "location": "Mill Junction, Carr Street, Newtown, Johannesburg, South Africa",
         "funding": ["NSFAS ", "Bursary ", "Self Funded"],
         "university": "UJ",
-        "imageUrl": "https://stemstudents.co.za/wp-content/uploads/2024/09/IMG_6719.jpg"
+        "imageUrl": "images/accomodations/Mill Junction.jpg"
     },
     {
         "id": 7,    
@@ -62,7 +62,7 @@ export const accommodations = [
         "location": "30 Claim St, Doornfontein, Johannesburg, 2001",
         "university": "UJ",
         "funding": ["NSFAS ","Bursary ", "Self Funded"],
-        "imageUrl": "https://gatewayres.co.za/wp-content/uploads/2025/02/WhatsApp-Image-2025-02-01-at-14.03.40-1536x1152.jpeg"
+        "imageUrl": "images/accomodations/Gateway Residence.webp"
     },
     {
         "id": 8,    
@@ -71,7 +71,7 @@ export const accommodations = [
         "university": "VUT",
         "location": "42 Richmond Ave, Auckland Park, Johannesburg, 2092",
         "funding": ["NSFAS ","Bursary ", "Self Funded"],
-        "imageUrl": "https://thrivestudentliving.co.za/wp-content/uploads/2024/11/The-Richmond_-External.jpg"
+        "imageUrl": "images/accomodations/The-Richmond_-External.jpg"
     },
     {
         "id": 9,    
@@ -98,7 +98,7 @@ export const accommodations = [
         "funding": ["NSFAS ", "Bursary ", "Self Funded"],
         "description": "Sharing Apartment, Single Apartment",
         "university": "UJ & WITS",
-        "imageUrl": "https://stemstudents.co.za/wp-content/uploads/2024/02/IMG_7358-scaled.jpg"
+        "imageUrl": "images/accomodations/drivelines accom.jpg"
     },
     {
         "id": 12,    
@@ -107,7 +107,7 @@ export const accommodations = [
         "funding": ["NSFAS ", "Bursary ", "Self Funded"],
         "description": "Sharing Apartment, Single Apartment",
         "university": "UJ & WITS",
-        "imageUrl": "https://stemstudents.co.za/wp-content/uploads/2024/02/IMG_5500-scaled.jpg"
+        "imageUrl": "images/accomodations/Nota bene accom.webp"
     },
     {
         "id": 13,    
@@ -116,7 +116,7 @@ export const accommodations = [
         "description": "Sharing Apartment, Single Apartment",
         "university": "NWU",
         "funding": ["NSFAS ","Bursary ", "Self Funded"],
-        "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipNV0ookGoIYqv11-Boj0mIx9Ni73Ficmm-WF7U=w571-h240-k-no"
+        "imageUrl": "images/accomodations/Green meadows accom.jpg"
     },
     {
         "id":14,    
@@ -125,7 +125,7 @@ export const accommodations = [
         "description": "Sharing Apartment, Single Apartment",
         "university": "UJ",
         "funding": "NSFAS ",
-        "imageUrl": "https://www.aspirestudentliving.co.za/wp-content/uploads/2024/09/miller-street-building-hd-1200x675.png"
+        "imageUrl": "images/accomodations/Aspire student living.png"
     },
     {
         "id": 15,    
@@ -134,7 +134,7 @@ export const accommodations = [
         "location": "19 Girton Rd, Parktown, Johannesburg, 2193",
         "university": "UJ & WITS",
         "funding": ["NSFAS ", "Bursary ", "Self Funded"],
-        "imageUrl": "https://stemstudents.co.za/wp-content/uploads/2025/09/BSNKB-8069-1.jpg"
+        "imageUrl": "images/accomodations/Campus cental girton.webp"
     },
     {
         "id": 16,    
@@ -143,7 +143,7 @@ export const accommodations = [
         "description": "Sharing Apartment, Single Apartment",
         "university": "UJ & WITS",
         "funding": ["NSFAS ", "Self Funded"],
-        "imageUrl": "https://stemstudents.co.za/wp-content/uploads/2024/03/IMG_5720-2-scaled.jpg"
+        "imageUrl": "images/accomodations/That house stainely built accom.webp"
     },
     {
         "id": 17,    
@@ -152,7 +152,7 @@ export const accommodations = [
         "description": "Sharing Apartment, Single Apartment",
         "university": "WITS",
         "funding": ["NSFAS ","Bursary ", "Self Funded"],
-        "imageUrl": "https://stemstudents.co.za/wp-content/uploads/2025/09/11329TSL-1.jpg"
+        "imageUrl": "images/accomodations/campus central albany.webp"
     },
     {
         "id": 18,    
@@ -161,7 +161,7 @@ export const accommodations = [
         "description": "Sharing Apartment, Single Apartment",
         "university": "UP & TUT",
         "funding": ["NSFAS ","Self Funded"],
-        "imageUrl": "https://stemstudents.co.za/wp-content/uploads/2025/09/11160TS-3.webp"
+        "imageUrl": "images/accomodations/Campus central hatfield.webp"
     },
     {
         "id": 19,    
@@ -170,7 +170,7 @@ export const accommodations = [
         "description": "Sharing Apartment, Single Apartment",
         "university": "UJ, WITS & Colleges ",
         "funding": "Self Funded",
-        "imageUrl": "https://stemstudents.co.za/wp-content/uploads/2024/05/WhatsApp-Image-2024-05-13-at-16.14.50-1-scaled.jpeg"
+        "imageUrl": "images/accomodations/Greenhood manor student accom.webp"
     },
     {
         "id": 20,    
@@ -179,7 +179,7 @@ export const accommodations = [
         "description": "Sharing Apartment, Single Apartment",
         "university": "TUT",
         "funding": ["Bursary ", "Self Funded"],
-        "imageUrl": "https://stemstudents.co.za/wp-content/uploads/2024/09/IMG_6882.jpg"
+        "imageUrl": "images/accomodations/Ekhaya junction.jpg"
     },
     {
         "id": 21,    
@@ -188,7 +188,7 @@ export const accommodations = [
         "description": "Sharing Apartment, Single Apartment",
         "university": "UJ",
         "funding": ["NSFAS ","Bursary ", "Self Funded"],
-        "imageUrl": "https://stemstudents.co.za/wp-content/uploads/2024/02/IMG_4292-scaled.jpg"
+        "imageUrl": "images/accomodations/W + A accom.webp"
     },
     {
         "id": 22,    
@@ -197,7 +197,7 @@ export const accommodations = [
         "description": "Sharing Apartment, Single Apartment",
         "university": "WITS",
         "funding": ["NSFAS ","Bursary ", "Self Funded"],
-        "imageUrl": "https://stemstudents.co.za/wp-content/uploads/2025/09/11317TSL-44.jpg"
+        "imageUrl": "images/accomodations/Campus cental st davids.webp"
     },
     {
         "id": 23,    
@@ -206,7 +206,7 @@ export const accommodations = [
         "description": "Sharing Apartment, Single Apartment",
         "university": "WITS",
         "funding": ["NSFAS ","Bursary ", "Self Funded"],
-        "imageUrl": "https://stemstudents.co.za/wp-content/uploads/2025/01/IMG_8037-scaled.jpg"
+        "imageUrl": "images/accomodations/Nelmey student hub accom.webp"
     },
     {
         "id": 24,
@@ -215,7 +215,7 @@ export const accommodations = [
         "description": "Sharing Apartment, Single Apartment",
         "university": "UJ & WITS",
         "funding": "Self Funded",
-        "imageUrl": "https://stemstudents.co.za/wp-content/uploads/2024/04/image00001-scaled.jpeg"
+        "imageUrl": "images/accomodations/Abraham Kriel Bambanani accom.webp"
     }
 
 ]
